@@ -678,6 +678,32 @@ a  { color: inherit; text-decoration: none; }
 }
 
 /* ================================================================
+   COMMUNITY BANNER
+   ================================================================ */
+.community-banner-section {
+  padding: 0 0 100px 0;
+  background: #fff;
+}
+
+.community-banner-inner {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.community-banner-inner img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .community-banner-inner img { height: 250px; }
+}
+
+/* ================================================================
    HOW IT WORKS
    ================================================================ */
 .how-it-works {
@@ -1981,7 +2007,7 @@ a  { color: inherit; text-decoration: none; }
 }
 
 .testimonial-avatar {
-  width: 44px; height: 44px;
+  width: 48px; height: 48px;
   border-radius: 50%;
   background: var(--grad-brand);
   display: flex;
@@ -1989,6 +2015,13 @@ a  { color: inherit; text-decoration: none; }
   justify-content: center;
   font-size: 1.2rem;
   flex-shrink: 0;
+  overflow: hidden;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .testimonial-author-name {
