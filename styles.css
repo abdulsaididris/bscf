@@ -1655,6 +1655,14 @@ a  { color: inherit; text-decoration: none; }
 .proj-type-bar.business   { background: var(--grad-gold); }
 .proj-type-bar.accounting { background: var(--grad-emerald); }
 
+.proj-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(123,59,42,.07);
+  display: block;
+}
+
 .proj-header { padding: 24px 32px 20px; border-bottom: 1px solid rgba(123,59,42,.07); }
 
 .proj-header-top {
