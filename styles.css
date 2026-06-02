@@ -116,6 +116,8 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 img { max-width: 100%; display: block; }
@@ -2278,6 +2280,25 @@ a  { color: inherit; text-decoration: none; }
   .form-row { grid-template-columns: 1fr; }
   .signup-form-wrapper { padding: 32px 24px; }
   .tier-select-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .fin-grid { grid-template-columns: 1fr; }
+  .scenario-returns { flex-direction: column; align-items: flex-start; }
+  .scenario-tabs { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .proj-header { padding: 20px 20px 16px; }
+  .proj-synopsis { padding: 16px 20px; }
+  .proj-financials { padding: 20px 20px; }
+  .proj-scenarios { padding: 20px 20px; }
+  .proj-footer { padding: 16px 20px; flex-direction: column; align-items: flex-start; gap: 12px; }
+  .opps-stat { padding: 16px 20px; }
+  .hero-inner { padding: 40px 0 20px; }
+  .section-title { font-size: 2rem; }
+  .navbar-logo-text { display: none; } /* Hide full logo text on very small screens to prevent overflow */
 }
 
 /* ── Scrollbar ──────────────────────────────────────────────── */
